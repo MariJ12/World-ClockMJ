@@ -1,5 +1,9 @@
 body {
-  background-color: #f9f7fe;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/305/original/aryan-dhiman-iGLLtLINSkw-unsplash.jpg?1685117863");
+  background-size: 1500px;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  margin: 8px;
 }
 .container {
   font-family: sans-serif;
@@ -7,22 +11,24 @@ body {
   margin: 60px auto;
   background: white;
   padding: 30px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(235, 232, 234, 0.4);
+  border-radius: 20px;
 }
 .citiesonshow {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px dashed plum;
+  border-bottom: 1px dotted plum;
 }
 
 .citiesonshow:last-child {
   border: none;
 }
 select {
+  font-size: 20px;
   display: block;
+  color: blueviolet;
   width: 100%;
   border-radius: 4px;
   padding: 10px;
@@ -35,6 +41,10 @@ h2 {
   margin: 0 0 5px;
   font-size: 32px;
 }
+select .select {
+  color: rgb(206, 205, 205);
+}
+
 .date {
   opacity: 0.8;
 }
@@ -52,4 +62,9 @@ footer {
   text-align: center;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.76);
+  margin: 60px auto;
+  border-radius: 4px;
+  padding: 10px;
+  display: block;
 }

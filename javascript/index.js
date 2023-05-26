@@ -1,5 +1,4 @@
 function updateTime() {
-  let brasilElement = document.querySelector("#idbrasil");
   let brasilDateElement = document.querySelector("#date-brasil");
   let brasilTimeElement = document.querySelector("#time-brasil");
   let brasilZone = moment().tz("America/Sao_Paulo");
@@ -8,20 +7,18 @@ function updateTime() {
     `H:m:SS [<small>]A[</small>]`
   );
 
-  let tokyoElement = document.querySelector("#idtokyo");
   let tokyoDateElement = document.querySelector("#date-tokyo");
   let tokyoTimeElement = document.querySelector("#time-tokyo");
   let tokyoZone = moment().tz("Asia/Tokyo");
   tokyoDateElement.innerHTML = moment().format("MMMM Do YYYY");
-  tokyoTimeElement.innerHTML = tokyoZone.format(`H:m:SS [<small>]A[</small>]`);
+  tokyoTimeElement.innerHTML = tokyoZone.format(`H:mm:SS [<small>]A[</small>]`);
 
-  let sydneyElement = document.querySelector("#idsydney");
   let sydneyDateElement = document.querySelector("#date-sydney");
   let sydneyTimeElement = document.querySelector("#time-sydney");
   let sydneyZone = moment().tz("Australia/Sydney");
-  sydneyDateElement.innerHTML = moment().format("MMMM Do YYYY");
+  sydneyDateElement.innerHTML = sydneyZone.format("MMMM Do YYYY");
   sydneyTimeElement.innerHTML = sydneyZone.format(
-    `H:m:SS [<small>]A[</small>]`
+    `H:mm:SS [<small>]A[</small>]`
   );
 }
 
@@ -39,7 +36,7 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "H:m:SS"
+            "H:mm:SS"
           )} <small>${cityTime.format("A")}</small></div>
         </div> <a href="index.html">Back to main page</a>`;
 }
