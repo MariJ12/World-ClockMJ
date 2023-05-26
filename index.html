@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>Wordl Clock - MJ</title>
   </head>
   <body>
@@ -16,33 +18,33 @@
         <option value=" ">New York</option>
         <option value=" ">Auckland</option>
       </select>
-      <div class="citiesonshow">
+      <div class="citiesonshow" id="idbrasil">
         <div>
-          <h2>Brazil </a></h2>
-          <div class="date">May 5</div>
+          <h2>Brazil</h2>
+          <div class="date" id="date-brasil"></div>
         </div>
-        <div class="time">10:00 <small>am</small></div>
+        <div class="time" id="time-brasil"></div>
       </div>
 
-      <div class="citiesonshow">
+      <div class="citiesonshow" id="idtokyo">
         <div>
-          <h2>Tokyo </h2>
-          <div class="date">May 5</div>
+          <h2>Tokyo</h2>
+          <div class="date" id="date-tokyo"></div>
         </div>
-        <div class="time">10:00 <small>am</small></div>
+        <div class="time" id="time-tokyo"></div>
       </div>
-      <div class="citiesonshow">
+      <div class="citiesonshow" id="idsydney">
         <div>
-          <h2>Sydney </h2>
-          <div class="date">May 5</div>
+          <h2>Sydney</h2>
+          <div class="date" id="date-sydney"></div>
         </div>
-        <div class="time">10:00 <small>am</small></div>
+        <div class="time" id="time-sydney"></div>
       </div>
     </div>
     <footer>
-      This project was created by 💜<strong>Mariana Jennings</strong>  and in
+      This project was created by 💜<strong>Mariana Jennings</strong> and in
       <a href="https://github.com/MariJ12/World-ClockMJ" target="_blank "
-        >open source ob GitHub</a
+        >open source on GitHub</a
       >
     </footer>
     <script src="javascript/index.js"></script>
