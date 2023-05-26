@@ -42,7 +42,7 @@ function updateCity(event) {
 }
 
 updateTime();
-setInterval(updateTime, 1);
+setInterval(updateTime, 100);
 
 let citiesSelect = document.querySelector("#city");
 citiesSelect.addEventListener("change", updateCity);
